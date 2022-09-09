@@ -1,0 +1,57 @@
+.comunity
+ padding-top: 79px
+ padding-bottom: 60px
+ background: url(../img/comunity-bg.png) center no-repeat
+ background-size: cover
+ &-title
+  font-size: 39px
+  font-weight: 600
+  color: $color-green
+  text-align: center
+  margin-bottom: 42px
+ &-descr
+  font-size: 20px
+  color: #949494
+  text-align: center
+  line-height: 35px
+  margin-bottom: 98px
+ &-chats
+  display: flex
+  justify-content: space-around
+ &-chat
+  flex-basis: 34%
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  &::after
+   content:''
+   position: absolute
+   top:162px
+   left:130px
+   border: 16px solid transparent
+   border-left: 13px solid #fff
+   border-top: 16px solid #fff
+  &__message
+   font-size: 21px
+   font-weight: 600
+   color: $color-green
+   text-align: center
+   padding-left:  36px
+   padding-right: 42px
+   padding-top: 25px
+   padding-bottom: 25px
+   background-color: #fff
+   border-radius: 10px
+   span 
+    font-size: 13px
+    font-weight: 400
+    color: #848484
+    text-align: left
+  &__author
+   display: flex
+   align-items: center
+   margin-top: 50px
+  &__name
+   margin-left: 18px 
+ 

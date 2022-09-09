@@ -1,0 +1,142 @@
+.featured
+ margin-top: 81px
+ margin-bottom: 66px
+ &-text
+  flex-basis: 65%
+ &-title
+  font-size: 29px
+  font-weight: 600
+  margin-bottom: 26px
+ &-descr
+  font-size: 17px
+  color: #8f8f8f
+  line-height: 30px
+ &-button
+  display: flex
+  justify-content: center
+  flex-basis: 35%
+ &-header
+  display: flex
+  align-items: center
+ &-projects
+  margin-top: 66px
+  display: flex
+  justify-content: space-between
+ &-project
+  background-color: rgba(0, 0, 0, 0.03)
+  max-width: 300px
+  border: none
+  border-radius: 8px
+  &__progress
+   width: 248px
+   height: 14px
+   background-color: rgba(0, 0, 0, 0.14)
+   border: none
+   border-radius: 10px
+   margin-left: 26px
+   margin-right: 26px
+   margin-bottom: 20px
+   position: relative
+   &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    background-color: $color-green
+    height: 100%
+    border-radius: 10px 0 0 10px
+   &_1::after
+    width: 10%
+   &_2::after
+    width: 60%
+   &_3::after
+    width: 20%
+  &__date
+   font-size: 13px
+   font-weight: 600
+   display: flex
+   margin-left: 25px
+   margin-right: 25px
+   margin-bottom: 47px
+   justify-content: space-between
+   position: relative
+   color: #8d8d8d
+   &::after
+    content: ''
+    position: absolute
+    width: 252px
+    height: 1px	
+    top: 34px	
+    left: 0
+    background-color: #e3e3e3
+    z-index: 5
+  &__detail
+   font-size: 15px
+   font-weight: 600
+   margin-right: 25px
+   margin-left: 110px
+   margin-bottom: 24px
+   position: relative
+   color: rgba(72, 72, 72, 0.85)
+   &::after
+    content: ''
+    position: absolute
+    top: 2px
+    left: 145px
+    border: 10px solid transparent
+    border-left: 14px solid $color-green
+  &__title
+   font-size: 17px
+   font-weight: 600
+   margin-bottom: 17px
+   text-align: center
+   margin-right: 25px
+   margin-left: 25px
+  &__descr
+   font-size: 13px
+   color: rgba(72, 72, 72, 0.71)
+   margin-bottom: 20px
+   text-align: center
+   line-height: 20px	
+   margin-right: 25px
+   margin-left: 25px
+  &__img
+   max-width: 300px
+   max-height: 226px
+   margin-bottom: 29px
+   position: relative
+   &::after
+    content: 'From GBP 3600'
+    text-align: center
+    line-height: 35px
+    color: #fff
+    position: absolute
+    top: 171px
+    left: 145px
+    width: 140px
+    height: 35px
+    background-color: #26a6d1
+    z-index: 5
+   &_none
+    position: relative
+    &::before
+     position: absolute
+     content: ''
+     font-size: 10px
+     top: -256px
+     left: 0
+     z-index: 5
+     border: 38px solid transparent
+     border-left: 38px solid $color-green
+     border-top: 38px solid $color-green
+     border-radius: 8px
+    &::after    
+     position: absolute 
+     content: 'NEW'
+     color: #fff
+     top: -242px    
+     left: 7px
+     z-index: 6
+     transform: rotate(-45deg)
+     font-size: 15px
+

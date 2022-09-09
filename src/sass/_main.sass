@@ -1,0 +1,68 @@
+.main	
+ background: green url(../img/main-bg.png) center no-repeat
+ background-size: cover
+ text-align: center
+ position: relative
+ z-index: 1
+ &::before
+  content: ''
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  position: absolute
+  background: rgba(0, 0, 0, .35)
+  z-index: -1
+ &-title
+  font-size: 49px
+  font-weight: 600
+  padding-top:  169px
+  padding-bottom:  59px
+  color: #fff
+  span
+   font-weight: 400
+   font-size: 35px
+.arrow
+ z-index: 1
+ display: flex
+ justify-content: flex-end
+ position: relative
+ &-right
+  position: relative
+  width: 15px
+  height: 25px
+  top: -85px
+  right:25px
+  &__top ,&__bottom
+   position: absolute
+   background-color: #fff
+   height: 5px
+   width: 16px
+   top: 10px
+   right:4px
+  &__top
+   transform: rotate(45deg)
+   transform-origin: bottom right
+  &__bottom
+   transform: rotate(-45deg)
+   transform-origin: top right
+ &-left  
+  position: absolute
+  top:-85px
+  right:70px   
+  width: 15px
+  height: 25px
+  &__top ,&__bottom
+   position: absolute
+   top: 10px
+   left: 4px
+   background-color: #fff
+   height: 5px
+   width: 16px
+  &__top
+   transform: rotate(45deg)
+   transform-origin: top left
+  &__bottom
+   transform: rotate(-45deg)
+   transform-origin: bottom left
+  

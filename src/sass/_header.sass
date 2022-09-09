@@ -1,0 +1,91 @@
+.header
+ &-flex
+  margin-top: 33px
+  margin-bottom: 30px
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &-title
+  margin-left: 30px
+  font-size: 31px	
+  flex-basis: 20%
+  position: relative
+  text-transform: uppercase
+  &::before
+   content: ''
+   position: absolute
+   top: 8px
+   left: -15px
+   background-color: $color-green
+   width: 7px
+   height: 29px
+   border: none
+   border-radius: 5px	
+  &::after
+   content: ''
+   position: absolute
+   top: 1px
+   left: -28px
+   background-color: $color-green
+   width: 7px
+   height: 36px
+   border: none
+   border-radius: 5px
+  &__none
+   position: relative
+   &::before
+    content: ''
+    position: absolute
+    top: 17px
+    left: -41px
+    background-color: $color-green
+    width: 7px
+    height: 20px
+    border: none
+    border-radius: 5px
+   &::after
+    content: ''
+    position: absolute
+    top: 6px
+    left: -41px
+    background-color: $color-green
+    width: 7px
+    height: 7px
+    border: none
+    border-radius: 50%
+ &-list
+  margin-left: 121px
+  display: flex
+  justify-content: space-between
+  align-self: center
+  flex-basis: 70%
+  color: rgba(102, 102, 102, 0.67)
+  font-size: 13px
+  font-weight: 600
+ &-burger
+  width: 50px
+  height: 29px
+  position: relative
+  margin-right: 20px
+  display: none
+  &_active 
+   &:nth-child(1)
+    transform: rotate(45deg)
+    top: 24px
+   &:nth-child(2)
+    opacity: 0
+   &:nth-child(3)
+    top: 24px
+    transform: rotate(-45deg)
+  &_line
+   position: absolute
+   top: 0px
+   left: 0
+   width: 50px
+   height: 5px
+   background-color: $color-green
+   &:nth-child(2)
+    top: 12px
+   &:nth-child(3)
+    top: 24px
+
